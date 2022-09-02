@@ -1,0 +1,9 @@
+"""the credit score filter will filter a bank list by the loan applicant's minimum credit score"""
+
+
+def filter_credit_score(credit_score, bank_list):
+    credit_score_approval_list = []
+    for bank in bank_list:
+        if credit_score >= int(bank[4]):
+            credit_score_approval_list.append(bank)
+    return credit_score_approval_list
